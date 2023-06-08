@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
 
 
 
-// USE THIS ONE FOR CITY 
+// USE THIS ONE FOR CITY OR ZIPCODE 
 app.post("/city", function (req, res) {
   const cityName = req.body.cityName;
  const url =
@@ -34,7 +34,7 @@ app.post("/city", function (req, res) {
   });
 });
 
-// USE THIS ONE FOR ZIPCODE
+// USE THIS ONE FOR ZIPCODE // IF YOU TRY TO USE CITY, IT WILL THROW ERROR 
 app.post("/zipcode", function (req, res) {
     const zipcode = req.body.zipcode;
     const url = "https://api.openweathermap.org/geo/1.0/zip?zip=" + zipcode + "&appid=37f29f7631f9aec93c23685b2545c3c8";
