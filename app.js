@@ -21,7 +21,7 @@ app.post("/city", function (req, res) {
       const jsondata = JSON.parse(data);
       console.log(jsondata)
       const temp = jsondata.main.temp;
-      const name = jsondata.main.name;
+      // const name = jsondata.main.name;
       const des = jsondata.weather[0].description;
       const icon = jsondata.weather[0].icon;
       const imageurl = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
@@ -61,7 +61,7 @@ app.post("/zipcode", function (req, res) {
             const jsondata = JSON.parse(data);
             console.log(jsondata)
             const temp = jsondata.main.temp;
-            const name = jsondata.main.name;
+            // const name = jsondata.main.name;
             const des = jsondata.weather[0].description;
             const icon = jsondata.weather[0].icon;
             const imageurl = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
